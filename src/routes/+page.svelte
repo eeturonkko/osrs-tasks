@@ -1,11 +1,16 @@
-<main class="mt-16 flex flex-col items-center gap-8 p-8 text-center">
-	<section class="flex flex-col gap-2">
-		<h1 class="text-4xl font-bold">Welcome to SvelteKit</h1>
-		<p class="text-lg">This is a blank page. You can start from here.</p>
-		<p class="text-lg">
-			You can also start from <a href="https://kit.svelte.dev/docs" class="text-blue-500"
-				>SvelteKit documentation</a
-			>.
-		</p>
+<script>
+	import HeroCarousel from '$lib/components/HeroCarousel.svelte';
+	import { Button } from '$lib/components/ui/button';
+</script>
+
+<main class="mt-16 p-8">
+	<section class="flex items-center justify-center gap-8">
+		<div class="flex flex-col items-center gap-5">
+			<h2 class="text-center text-3xl font-bold tracking-tighter md:text-5xl">
+				Your Old School RuneScape tasks, managed.
+			</h2>
+			<Button class="w-1/4" href="/tasks">Get started</Button>
+		</div>
+		<HeroCarousel />
 	</section>
 </main>
